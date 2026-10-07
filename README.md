@@ -44,6 +44,7 @@ Supporting folders:
 
 1. [CellProfiler environment](./environments/cellprofiler_env.yml) (`fibrosis_cp_env`): CellProfiler, for image QC, illumination correction, and feature extraction (modules 1, 2, 3, and the validation plate equivalents)
 2. [Preprocessing environment](./environments/preprocessing_env.yml) (`fibrosis_preprocessing_env`): pycytominer, CytoTable, and coSMicQC, for image-based profiling (module 4 and the validation plate profiling)
+3. [Position correction R environment](./environments/r_position_correction_env.yml) (`fibrosis_position_correction_r_env`): R and ggplot2, for the figures of the position correction investigation (step 3a of module 4)
 
 Create an environment with conda or mamba from the root of this repository:
 
