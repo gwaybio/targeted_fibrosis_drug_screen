@@ -1,0 +1,32 @@
+[project]
+name = "cardiac-fibrosis-rescue-screen-profiling"
+version = "0.1.0"
+description = "Image analysis and image-based profiling of a cardiac fibroblast drug screen"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "CytoDataFrame==0.0.30",
+  "Cytotable==1.2.6",
+  "coSMicQC==1.1.2",
+  "ipykernel",
+  "joblib",
+  "jupyterlab",
+  "matplotlib",
+  "nbconvert",
+  "numpy==1.24.4",
+  "pandas==2.3.3",
+  "papermill",
+  "pyarrow==20.0.0",
+  # pycytominer 1.5.0 and later keep string columns (Image_FileName_*, Image_PathName_*) through
+  # normalization and feature selection, and 1.7.1 selects the features of the existing profiles
+  "pycytominer==1.7.1",
+  "scikit-learn==1.7.2",
+  "scipy==1.15.3",
+  "seaborn",
+  "tabulate",
+  "upsetplot"
+]
+
+[tool.uv]
+# The notebooks import the helper modules in utils/ by path, so this is not an installable package
+package = false
